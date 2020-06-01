@@ -1,0 +1,30 @@
+{
+  "name": "fe-cli",
+  "version": "0.0.1",
+  "description": "fe-cli",
+  "main": "index.js",
+  "bin": {
+    "fe": "./bin/index.js"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxchuan12/fe-cli.git"
+  },
+  "author": "若川 <lxchuan12@163.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxchuan12/fe-cli/issues"
+  },
+  "homepage": "https://github.com/lxchuan12/fe-cli#readme",
+  "devDependencies": {
+    "@types/inquirer": "^6.5.0",
+    "commander": "^5.1.0",
+    "git-cz": "^4.6.2",
+    "inquirer": "^7.1.0",
+    "release-it": "^13.6.1"
+  }
+}
