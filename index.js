@@ -24,13 +24,6 @@ program
     .command('release')
     .description('release')
     .action(release);
-// feature: 
-// lint-staged husky
-// init
-// build
-// release-it
-// changelog
-// git-cz
 console.log('fe-cli');
 
 console.log('commit');
