@@ -25,6 +25,7 @@
     "commander": "^5.1.0",
     "git-cz": "^4.6.2",
     "inquirer": "^7.1.0",
-    "release-it": "^13.6.2"
+    "release-it": "^13.6.2",
+    "shelljs": "^0.8.4"
   }
 }
