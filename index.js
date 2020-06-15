@@ -10,8 +10,9 @@ const version = packageJson.version;
 const { exec } = require('child_process');
 const release = require('./src/commands/release.js');
 const commit = require('./src/commands/commit.js');
+const { pull } = require('./src/commands/pull.js');
 
-console.log('release', release);
+// console.log('release', release);
 // const inquirer = require('inquirer');
 
 program
@@ -24,6 +25,11 @@ program
     .command('release')
     .description('release')
     .action(release);
+program
+    .version(version)
+    .command('pull')
+    .description('git pull 防止冲突的拉取代码')
+    .action(pull);
 console.log('fe-cli');
 
 console.log('commit');
