@@ -23,6 +23,7 @@
   "devDependencies": {
     "@types/inquirer": "^6.5.0",
     "commander": "^5.1.0",
+    "conventional-changelog": "^3.1.21",
     "git-cz": "^4.6.2",
     "inquirer": "^7.1.0",
     "release-it": "^13.6.2",
