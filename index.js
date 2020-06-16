@@ -6,31 +6,32 @@
 
 const program = require('commander');
 const packageJson = require('./package.json');
-const version = packageJson.version;
 const { exec } = require('child_process');
 const release = require('./src/commands/release.js');
 const commit = require('./src/commands/commit.js');
 const { pull } = require('./src/commands/pull.js');
-
+const { changelog } = require('./src/commands/changelog.js');
+// console.log();
+program.version(packageJson.version);
 // console.log('release', release);
 // const inquirer = require('inquirer');
 
-program
-    .version(version)
-    .command('commit')
+program.command('commit')
     .description('使用 git-cz 提交 message')
     .action(commit);
-program
-    .version(version)
-    .command('release')
+
+program.command('release')
     .description('release')
     .action(release);
-program
-    .version(version)
-    .command('pull')
+
+program.command('pull')
     .description('git pull 防止冲突的拉取代码')
     .action(pull);
+
+program.command('changelog')
+    .description('git changelog 防止冲突的拉取代码')
+    .action(changelog);
+
 console.log('fe-cli');
 
-console.log('commit');
 program.parse(process.argv);
